@@ -53,7 +53,7 @@
     <div class="index_row_box">
         <section class="section_frst_row">
             <div class="section_left_row">
-                <img src="templates/phrp/images/mans/index_man.jpg" alt="default">
+                <img src="templates/phrp/images/mans/glavnaya.png" alt="default">
             </div>
             <div class="section_right_row home-right-row-center">
                 <div class="description">
@@ -61,7 +61,7 @@
                     <p>Мы постарались объединить лучшие элементы ролевой игры с новыми идеями и широкими возможностями, которых вам ещё не приходилось видеть!</p>
                 </div>
                 <div class="butt_social">
-                    <a href="play.html" class="start-to-play">Начать играть</a>
+                    <a href="play.php" class="start-to-play">Начать играть</a>
                     <div class="soc_img">
                         <a target="_blank" href="#"><i class="fab fa-vk"></i></a>
                         <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
@@ -74,7 +74,7 @@
             <div class="section_scnd_row_content">
                 <div class="section_scnd_left_row">
                     <h2 class="title-decoration">
-                        <span>Сервера</span>
+                        <span>Сервер</span>
                     </h2>
                     <ul class="servers_list">
                     <?php
@@ -100,7 +100,7 @@
                                 </div>
                                 <div class="server_box_center_side">
                                     <p>WarSong | RAGE MP</p>
-                                    <h3>IP: 185.71.65.210:22005</h3>
+                                    <h3>IP: 185.71.65.210:22005</7h3>
                                     <div class="server_box_members_percent">
                                         <span style="width: <?php echo $value['players'] / $value['maxplayers'] * 100?>%"></span>
 
@@ -144,10 +144,10 @@
                     <li>
                         <div class="social_list">
                             <div class="social_list_img">
-                                <img src="templates/phrp/images/mans/social_man_1.png">
+                                <img src="templates/phrp/images/mans/vk.png">
                             </div>
                             <div class="social_list_info">
-                                <div class="social_list_info_box">
+                                <div class="social_list_info_box">7
                                     <h3>VK</h3>
                                     <p id='count_official'>Официальная группа Вконтакте</p>
                                     <a href="https://vk.com/5warsongrp" target="_blank">Подписаться</a>
@@ -158,7 +158,7 @@
                     <li>
                         <div class="social_list">
                             <div class="social_list_img">
-                                <img src="templates/phrp/images/mans/social_man_2.png" class="soc_img_scnd">
+                                <img src="templates/phrp/images/mans/dis.png" class="soc_img_scnd">
                             </div>
                             <div class="social_list_info">
                                 <div class="social_list_info_box">

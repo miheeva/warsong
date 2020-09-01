@@ -586,6 +586,8 @@ section.section_frst_row.section_first_row_center {
 
 ul.servers_list {
   width: 100%;
+  display: flex;
+    justify-content: flex-end;
 }
 ul.servers_list li {
   margin: 0 0 10px;
@@ -692,7 +694,7 @@ ul.servers_list li {
 
 .server_box_right_side {
   position: absolute;
-  right: 20px;
+  left: 300px;
   top: 50%;
   transform: translate(0, -50%);
 }

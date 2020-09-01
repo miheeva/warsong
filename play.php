@@ -60,8 +60,8 @@
                                     <p>Скачайте и установите мультиплеер RAGEMP с официального сайта.</p>
                                 </div>
 								<div class="hts_download_box">
-                                    <h3>ВЫБРАТЬ СЕРВЕР</h3>
-                                    <p>Выберите один из наших серверов, на котором будете развивать своего персонажа.</p>
+                                    <h3>ЗАЙТИ НА СЕРВЕР</h3>
+                                    <p>Войти на наш сервер, на котором будете развивать своего персонажа.</p>
                                 </div>
                             </div>
                         </div>
@@ -76,10 +76,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="download-button">
-                        <a href="№">ССЫЛКА</a>
-                        <a href="№" class="download-button-muted">ССЫЛКА</a>
-                    </div>
+                    <!-- <div class="download-button">
+                        <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target='_blank'>GTA V Steam</a>
+                        <a href="https://rage.mp/" target='_blank' class="download-button-muted">RAGE MP</a>
+                    </div> -->
                 </div>
             </div>
         </section>
