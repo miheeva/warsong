@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Донат</title>
+    <link rel="shortcut icon" href="templates/phrp/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="templates/phrp/css/style.css">
+    <link rel="stylesheet" type="text/css" href="templates/phrp/css/adaptive.css">
+</head>
+<body id="main_anchor">
+
+<header class='header'>
+    <div class='header-container'>
+        <div class='header-logo'>
+            <a href='index.html'><img src='templates/phrp/images/logo.png' alt=''></a>
+        </div>
+        <div class='header-right'>
+            <div class='header-menu'>
+                <nav class='header-nav'>
+                    <div class='header-nav-close'></div>
+                    <ul class='header-nav-list'>
+                        <li><a href='index.html'>Главная</a></li>
+						<li><a href='play.html'>Начать играть</a></li>
+                        <li><a href='donate.html'>Донат</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <a href='donate.html#' class='header-nav-trigger'>
+            <span class='header-nav-trigger-line'></span>
+            <span class='header-nav-trigger-line'></span>
+            <span class='header-nav-trigger-line'></span>
+        </a>
+    </div>
+</header>
+
+<div class="index_row donate-page">
+    <div class="index_row_box">
+        <section class="section_frst_row section_frst_row_login">
+            <div class="login_left_box" style="background-image: url(templates/phrp/images/mans/popolnenie_scheta.png);">
+            </div>
+
+            <div class="login_right_box">
+                <div class="login_right_box_border"></div>
+
+                <div class="login_right_box_form">
+                    
+                    
+                <h3 class='hide error-status'>
+                    <img src='templates/phrp/images/svg/close-button.svg' alt='times'>
+                    <span></span>
+                </h3>
+                <form  action='donate.html' method='post'>                
+					<div class='input_row'>
+						<input type='text' name='dsum' value='' placeholder='Введите сумму'>
+						<input class='input-text' name='dname' placeholder='Ваш никнейм' type='text'>
+					</div>
+					<div class='login_right_box_form_button'>
+                        <button type='submit' class='donate-button' onClick="this.form.submit(); this.disabled=true; this.value='Загрузка...';">
+                            <img src='templates/phrp/images/svg/coin-stack.svg' alt='coins-icon'>
+                            <span>Пополнить счет</span>
+                        </button>						
+					</div>            
+				</form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_frst_row">
+            <div class="donate_info_row">
+                <div class="donate_info_box">
+                    <p>В данном разделе Вы можете приобрести кредиты за реальные деньги. Мы принимаем к оплате: QIWI,
+                        WebMoney, Яндекс.Деньги, банковские карты, СМС платежи с телефона и многое другое.</p>
+                </div>
+                <div class="donate_link_box">
+                    <div>
+                        <a href="donate.html#">Инструкция пополнения</a>
+                        <a href="donate.html#">Что приобрести на эти деньги?</a>
+                    </div>
+                </div>
+                <div class="donate_link_box">
+                    <div>
+                        <a href="donate.html#">Пользовательское соглашение</a>
+                        <a href="donate.html#">Через что можно оплатить?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section_footer no-image">
+            <div class="footer_row">
+                <div class="footer_left_row">
+                    <div class="top_menu_row">
+                        <span><a href="index.html">Главная</a></span>
+                        <span><a href="play.html">Начать играть</a></span>
+						<span><a href="donate.html">Донат</a></span>
+                    </div>
+                </div>
+                <div class="footer_bottom_row">
+                    <div class="footer-bottom-logo criminal">
+                        <img src="templates/phrp/images/logo-bw.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="templates/phrp/js/jquery.min.js"></script>
+<script src="templates/phrp/js/app.js"></script>
+
+</body>
+</html>
