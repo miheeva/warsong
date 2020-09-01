@@ -21,15 +21,15 @@
 <header class='header'>
     <div class='header-container'>
         <div class='header-logo'>
-            <a href='index.html'><img src='templates/phrp/images/logo.png' alt=''></a>
+            <a href='/'><img src='templates/phrp/images/logo.png' alt=''></a>
         </div>
         <div class='header-right'>
             <div class='header-menu'>
                 <nav class='header-nav'>
                     <div class='header-nav-close'></div>
                     <ul class='header-nav-list'>
-                        <li><a href='index.html'>Главная</a></li>
-						<li><a href='play.html'>Начать играть</a></li>
+                        <li><a href='/'>Главная</a></li>
+						<li><a href='/play.php'>Начать играть</a></li>
                         <li><a href='donate.html'>Донат</a></li>
                     </ul>
                 </nav>
@@ -39,7 +39,7 @@
     
             </div>
         </div>
-        <a href='index.html#' class='header-nav-trigger'>
+        <a href='/#' class='header-nav-trigger'>
             <span class='header-nav-trigger-line'></span>
             <span class='header-nav-trigger-line'></span>
             <span class='header-nav-trigger-line'></span>
@@ -77,25 +77,46 @@
                         <span>Сервера</span>
                     </h2>
                     <ul class="servers_list">
+                    <?php
+                        $ip = "185.71.65.210:22005";
+
+                        $c_init = curl_init('https://cdn.rage.mp/master/');
+                        curl_setopt($c_init, CURLOPT_RETURNTRANSFER, true);
+
+                        $source = curl_exec($c_init);
+                        curl_close( $c_init );
+                        $source = json_decode($source , true);
+
+                        foreach($source as $key => $value) {
+                            if ($ip == $key) {
+                                
+                                
+                         
+                        ?>
                         <li>
                             <div class="server_box" data-server-id="1">
-                                <!-- <div class="server_box_left_side">
-                                    
-                                </div> -->
+                                <div class="server_box_left_side">
+                                    <span><?php echo $value['players'].'/'.$value['maxplayers'];?></span>
+                                </div>
                                 <div class="server_box_center_side">
                                     <p>WarSong | RAGE MP</p>
                                     <h3>IP: 185.71.65.210:22005</h3>
                                     <div class="server_box_members_percent">
-                                        <span style="width: 0%"></span>
+                                        <span style="width: <?php echo $value['players'] / $value['maxplayers'] * 100?>%"></span>
+
                                     </div>
                                 </div>
                                 <div class="server_box_right_side">
-                                    <a href="index.html#" class="copy-server-ip" data-server-ip="185.71.65.210:22005">
+                                    <a href="/#" class="copy-server-ip" data-server-ip="185.71.65.210:22005">
                                         <img src="templates/phrp/images/svg/link-symbol-of-two-chains-links-linked-grey.svg" alt="прикрепить">
                                     </a>
                                 </div>
                             </div>
                         </li>
+                        <?php
+                    }
+                }
+                        ?>
                     </ul>
                 </div>
                 <div class="section_scnd_right_row home-news">
@@ -190,8 +211,8 @@
             <div class="footer_row">
                 <div class="footer_left_row">
                     <div class="top_menu_row">
-                        <span><a href="index.html">Главная</a></span>
-                        <span><a href="play.html">Начать играть</a></span>
+                        <span><a href="/">Главная</a></span>
+                        <span><a href="play.php">Начать играть</a></span>
 						<span><a href="donate.html">Донат</a></span>
                     </div>
                     <div class="footer_bottom_row">
